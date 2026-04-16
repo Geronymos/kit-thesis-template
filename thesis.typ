@@ -29,8 +29,8 @@
 #show heading.where(level: 5): set heading(numbering: none)
 
 #show heading.where(level: 1): it => [
-    #pagebreak(to: "odd", weak: true)
-    #it
+	#pagebreak(to: "odd", weak: true)
+	#it
 ]
 
 
@@ -52,7 +52,7 @@
 
 #set quote(block: true)
 #show quote: it => block(
-  stroke: (left: 2pt + gray),
+	stroke: (left: 2pt + gray),
 	it
 )
 
@@ -254,7 +254,7 @@
 	stroke: (x, y) => if y == 0 {
 		(bottom: 1pt)
 	},
-  inset: 2mm,
+	inset: 2mm,
 )
 #show table.header: it => set text(weight: "bold")
 
