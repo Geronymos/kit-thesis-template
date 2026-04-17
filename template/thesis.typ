@@ -13,6 +13,7 @@
 	institute: "Institute of Computer Engineering",
 	researchGroup: "Operating Systems Group",
 	abstract: include "chapters/0-abstract.typ",
+	appendix: none, // include "chapters/9-appendix.typ"
 	references: bibliography("references.bib")
 )
 

@@ -14,6 +14,7 @@
 	researchGroup: "Operating Systems Group",
 	abstract: "Your abstract",
 	references: "",
+	appendix: none,
 	body
 ) = [
 	#import "lib/cover.typ": cover
@@ -292,11 +293,12 @@
 	// Main content
 	#body
 
+	#if appendix != none [
+		#counter(heading).update(0)
+		#set heading(numbering: "A.1")
 
-	// #counter(heading).update(0)
-	// #set heading(numbering: "A.1")
-
-	// #include "chapters/9-appendix.typ"
+		#appendix
+	]
 
 
 	// Bibliography
