@@ -1,3 +1,4 @@
+// #import "../lib.typ": kit-thesis, todo-block, todo // typst compile --root=.. thesis.typ
 #import "@local/kit-thesis:0.1.0": kit-thesis, todo-block, todo
 
 #show: kit-thesis.with(
